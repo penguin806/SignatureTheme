@@ -1,5 +1,18 @@
 /* AMOR
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*Snow 2019-05-25*/
+/*admin@xuefeng.space*/
+
+.nav-logo {
+    width: 250px;
+    color: #fff;
+    fill: #fff;
+    transition: .5s ease-in-out;
+    z-index: 100;
+}
+
+
 .mastwrap.signature-amor {
     margin-right: 200px;
 }
