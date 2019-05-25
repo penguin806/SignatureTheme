@@ -27,7 +27,8 @@ $signature_options = signature_get_options('signature_wp');
     <div id="status"></div>
 </div>
 
-
+<!--Snow 2019-05-25-->
+<!--admin@xuefeng.space-->
 <!-- mobile only navigation : starts -->
 <nav class="mobile-nav signature-adler">
   <?php
