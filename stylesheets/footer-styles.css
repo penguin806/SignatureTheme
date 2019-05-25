@@ -15,8 +15,10 @@ footer.mastfoot.signature-amor .credits p{
 }
 
 .snow-footer-text {
-    margin: 30px auto;
+    padding-left: 50px;
+}
+
+.snow-footer-text p {
     font-size: 24px;
     color: white;
-
 }
