@@ -16,7 +16,7 @@
     width: 30px;
     height: 24px;
     position: relative;
-    margin: 7px auto;
+    margin: 15px auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -37,7 +37,7 @@
 #snow-icon-menu span {
     display: block;
     position: absolute;
-    height: 5px;
+    height: 4px;
     width: 50%;
     background: #fff;
     opacity: 1;

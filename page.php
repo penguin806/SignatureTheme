@@ -18,8 +18,14 @@ if ( have_posts() ) :
 		$container_class = '';
 	}
 
-		
+
 ?>
+        <script>
+            document.title = "数字媒体工作室";
+            console.log("Creative Design: 湖师大工设院 张宇帆");
+            console.log("Developer: 湖师大信工院 李学锋");
+            console.log("E-mail: admin@xuefeng.space");
+        </script>
 
 		<section id="page-<?php echo esc_attr(get_the_ID()); ?>" >
 			

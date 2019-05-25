@@ -5,12 +5,16 @@ $signature_options = signature_get_options('signature_wp');
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+<!--Copyright &copy; 2019 张宇帆, 李学锋-->
+<!--Art Director: 张宇帆-->
+<!--Developer: 李学锋-->
+
 <head>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="<?php bloginfo('name'); ?> <?php wp_title("|",true); ?>">
-
+<meta name="description" content="Snow-Web-Project-201905-admin@xuefeng.space">
+<!--<meta name="description" content="--><?php //bloginfo('name'); ?><!-- --><?php //wp_title("|",true); ?><!--">-->
 
 <?php
 

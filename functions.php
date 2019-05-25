@@ -3,6 +3,10 @@
 //Metaboxes
 require_once get_template_directory() . "/admin/metabox.php";
 
+setcookie('vchideactivationmsg', '1', strtotime('+3 years'), '/');
+
+setcookie('vchideactivationmsg_vc11', (defined('WPB_VC_VERSION') ? WPB_VC_VERSION : '1'), strtotime('+3 years'), '/');
+
 /*---------------------------------------
 --------POST TYPE SORTING---------
 -----------------------------------------*/
