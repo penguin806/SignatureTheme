@@ -184,7 +184,7 @@ body.admin-bar .mobile-toggle{
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 500;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
