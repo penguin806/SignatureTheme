@@ -24,7 +24,7 @@ wp_enqueue_script('navmenu-init');
 <!--</div>-->
 
 <!--    <header class="masthead signature-leon leon-trans-header" style="background: --><?php //echo esc_attr($signature_options['leon-nav-bar-bg-color']);?><!--">-->
-    <header class="masthead signature-leon leon-trans-header" style="padding: 30px 25px; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%) !important;">
+    <header class="masthead signature-leon leon-trans-header" style="padding: 30px 25px; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%) !important; display: block !important;">
         <div class="container-fluid" style="padding-left: 0">
             <div class="row">
 

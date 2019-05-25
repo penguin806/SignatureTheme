@@ -34,26 +34,26 @@ $signature_options = signature_get_options('signature_wp');
 <!--Snow 2019-05-25-->
 <!--admin@xuefeng.space-->
 <!-- mobile only navigation : starts -->
-<nav class="mobile-nav signature-adler">
-  <?php
-    if($signature_options['navigation_opt'] == "0")
-    {
-      $nav_args = array(
-        'theme_location'  => 'primary',
-        'container'       => false,
-        'menu_class'      => 'slimmenu',
-        'echo'            => true,
-        'fallback_cb'     => 'wp_page_menu'
-      );
-
-      wp_nav_menu( $nav_args );
-    }
-    else
-    {
-      signature_mobile_nav();
-    }
-  ?>
-</nav>
+<!--<nav class="mobile-nav signature-adler">-->
+<!--  --><?php
+//    if($signature_options['navigation_opt'] == "0")
+//    {
+//      $nav_args = array(
+//        'theme_location'  => 'primary',
+//        'container'       => false,
+//        'menu_class'      => 'slimmenu',
+//        'echo'            => true,
+//        'fallback_cb'     => 'wp_page_menu'
+//      );
+//
+//      wp_nav_menu( $nav_args );
+//    }
+//    else
+//    {
+//      signature_mobile_nav();
+//    }
+//  ?>
+<!--</nav>-->
 <!-- mobile only navigation : ends -->
     
 <?php
