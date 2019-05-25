@@ -12,6 +12,27 @@
 /*Snow 2019-05-25*/
 /*admin@xuefeng.space*/
 
+#snow-icon-menu {
+    width: 30px;
+    height: 24px;
+    position: relative;
+    margin: 7px auto;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    float: left;
+}
+
+.dark #snow-icon-menu span {
+    background-color: #333;
+}
+
 
 #snow-icon-menu span {
     display: block;
