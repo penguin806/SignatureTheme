@@ -42,20 +42,16 @@ $('#snow-icon-menu').click(function() {
 });
 
 
-
-
-
-
-$('.masthead, .mastwrap').click(function(){
-        $('.main-nav').removeClass('open-nav');
-        $('.masthead').removeClass('revealed');
-        //$('.mobile-toggle span').removeClass('white-color');
-            
-                $('.sub-nav-holder').fadeOut('fast');
-                                $('.menu-panel').fadeOut('slow');
-
-
-});
+// $('.masthead, .mastwrap').click(function(){
+//         $('.main-nav').removeClass('open-nav');
+//         $('.masthead').removeClass('revealed');
+//         //$('.mobile-toggle span').removeClass('white-color');
+//
+//                 $('.sub-nav-holder').fadeOut('fast');
+//                                 $('.menu-panel').fadeOut('slow');
+//
+//
+// });
 
     //Navigation Sub Menu Triggering on hover
     $('.trigger-sub-nav a').mouseenter(function(){
