@@ -6,8 +6,8 @@ $('.mobile-toggle').click(function() {
         $('.main-nav').removeClass('open-nav');
         $('.masthead').removeClass('revealed');
         //$('.mobile-toggle span').removeClass('white-color');
-                    $('.sub-nav-holder').fadeOut('fast');
-                                $('.menu-panel').fadeOut('slow');
+        $('.sub-nav-holder').fadeOut('fast');
+        $('.menu-panel').fadeOut('slow');
 
 
 

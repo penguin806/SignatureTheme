@@ -7,21 +7,47 @@ wp_enqueue_script('navmenu-init');
     <!--admin@xuefeng.space-->
 
     <!-- main navigation trigger -->
-<div class="main-nav signature-quartz visible-lg">
+<!--<div class="main-nav signature-quartz visible-lg">-->
 <!--  <div class="mobile-toggle color">-->
 <!--      <span></span>-->
 <!--      <span></span>-->
 <!--      <span></span>-->
 <!--  </div>-->
-    <div id="snow-icon-menu" class="">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-</div>
+<!--    <div id="snow-icon-menu" class="">-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--        <span></span>-->
+<!--    </div>-->
+<!--</div>-->
+
+    <header class="masthead signature-leon leon-trans-header" style="background: <?php echo esc_attr($signature_options['leon-nav-bar-bg-color']);?>">
+        <div class="container-fluid">
+            <div class="row">
+
+                <article class="col-md-6">
+                    <a href="<?php echo esc_url(home_url( '/' )); ?>"><img alt="<?php echo esc_attr(get_bloginfo('name')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="nav-logo img-responsive" src="<?php echo esc_url($signature_options['leon-nav-bar-logo']['url']); ?>"/></a>
+                </article>
+                <article class="col-md-6 notification-icon-wrap">
+                    <div class="menu-notification">
+<!--                        <a class="font3bold" href="#"><span class="ion-android-menu white"></span></a>-->
+                        <div id="snow-icon-menu" class="">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+    </header>
 
 
 
