@@ -98,15 +98,15 @@ wp_enqueue_script('navmenu-init');
 
 
 
-<header id="masthead" class="masthead signature-quartz">  
-  <div class="container-fluid">
-    <div class="row">
-        <article class="text-left col-md-2">
-            <a href="<?php echo esc_url(home_url( '/' )); ?>"><img alt="<?php echo esc_attr(get_bloginfo('name')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="nav-logo img-responsive" src="<?php echo esc_url($signature_options['quartz-nav-bar-logo']['url']); ?>"/></a>
-        </article>
-    </div>
-  </div>
-</header>
+<!--<header id="masthead" class="masthead signature-quartz">  -->
+<!--  <div class="container-fluid">-->
+<!--    <div class="row">-->
+<!--        <article class="text-left col-md-2">-->
+<!--            <a href="--><?php //echo esc_url(home_url( '/' )); ?><!--"><img alt="--><?php //echo esc_attr(get_bloginfo('name')); ?><!--" title="--><?php //echo esc_attr(get_bloginfo('name')); ?><!--" class="nav-logo img-responsive" src="--><?php //echo esc_url($signature_options['quartz-nav-bar-logo']['url']); ?><!--"/></a>-->
+<!--        </article>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</header>-->
     
 
     
