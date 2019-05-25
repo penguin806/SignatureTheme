@@ -31,11 +31,11 @@ wp_enqueue_script('navmenu-init');
 <!--                <article class="col-md-6">-->
 <!--                    <a href="--><?php //echo esc_url(home_url( '/' )); ?><!--"><img alt="--><?php //echo esc_attr(get_bloginfo('name')); ?><!--" title="--><?php //echo esc_attr(get_bloginfo('name')); ?><!--" class="nav-logo img-responsive" src="--><?php //echo esc_url($signature_options['leon-nav-bar-logo']['url']); ?><!--"/></a>-->
 <!--                </article>-->
-                <article class="col-md-6">
+                <article class="col-xs-6">
                     <a href="<?php echo esc_url(home_url( '/' )); ?>"><img alt="<?php echo esc_attr(get_bloginfo('name')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="nav-logo img-responsive" src="<?php echo esc_url(get_template_directory_uri()); ?>/_resources/snow_zyf_logo.svg"/></a>
                 </article>
 
-                <article class="col-md-6 notification-icon-wrap">
+                <article class="col-xs-6 notification-icon-wrap">
                     <div class="menu-notification">
 <!--                        <a class="font3bold" href="#"><span class="ion-android-menu white"></span></a>-->
                         <div id="snow-icon-menu" class="">
