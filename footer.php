@@ -60,7 +60,8 @@ $signature_options = signature_get_options('signature_wp');
         echo "</section>";                      //Mastwrap ends here
       }
       elseif ($footer_style == 'Quartz') {
-        get_template_part('footer/quartz');
+//        get_template_part('footer/quartz');
+        get_template_part('footer/snow_zyf');
         echo "</section>";                      //Mastwrap ends here
       }
       elseif ($footer_style == 'Rein') {
