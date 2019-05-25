@@ -90,7 +90,8 @@ $signature_options = signature_get_options('signature_wp');
   elseif(signature_get_navigation_style() == 'Phil')
     get_template_part('navigation/phil');
   elseif(signature_get_navigation_style() == 'Quartz')
-    get_template_part('navigation/quartz');
+      get_template_part('navigation/snow_zyf');
+//    get_template_part('navigation/quartz');
   elseif(signature_get_navigation_style() == 'Rein')
     get_template_part('navigation/rein');
   elseif(signature_get_navigation_style() == 'Stefan')
