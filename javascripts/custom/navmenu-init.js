@@ -26,8 +26,8 @@ $('#snow-icon-menu').click(function() {
     var $menuIcon = $('#snow-icon-menu');
     $menuIcon.toggleClass('open');
 
-    if ($('.main-nav').hasClass('open-nav')) {
-        $('.main-nav').removeClass('open-nav');
+    if ($('.masthead').hasClass('revealed')) {
+        // $('.main-nav').removeClass('open-nav');
         $('.masthead').removeClass('revealed');
         //$('.mobile-toggle span').removeClass('white-color');
         $('.sub-nav-holder').fadeOut('fast');
@@ -35,7 +35,7 @@ $('#snow-icon-menu').click(function() {
 
     } else {
         //$('.mobile-toggle span').addClass('white-color');
-        $('.main-nav').addClass('open-nav');
+        // $('.main-nav').addClass('open-nav');
         $('.masthead').addClass('revealed');
         $('.menu-panel').fadeIn('slow');
     }
