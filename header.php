@@ -24,7 +24,7 @@ $signature_options = signature_get_options('signature_wp');
 ?>
 
     <script>document.title = "数字媒体工作室";</script>
-    <script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript" src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
     <script type="text/javascript">
         $youziku.load("body", "06222c5faf0b451388667fd2f574f0d5", "Source-Han-Light");
         $youziku.load(".snow-text-cloud", "06222c5faf0b451388667fd2f574f0d5", "Source-Han-Light");
