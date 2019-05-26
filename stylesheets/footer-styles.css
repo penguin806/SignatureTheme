@@ -25,3 +25,9 @@ footer.mastfoot.signature-amor .credits p{
     margin: 0;
     line-height: 28px;
 }
+
+.snow-footer-text img {
+    margin-bottom: 8px;
+    display: block;
+    height: 30px;
+}
