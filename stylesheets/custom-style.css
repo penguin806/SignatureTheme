@@ -19,3 +19,7 @@ body {
 .snow-text-cloud {
 
 }
+
+.snow-text-bold {
+    font-weight: bold;
+}
