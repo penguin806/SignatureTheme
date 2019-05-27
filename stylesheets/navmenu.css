@@ -126,6 +126,33 @@
     top: 15px;
 }
 
+.snow-header {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .snow-header {
+        font-style: normal;
+        font-size: 32px !important;
+        letter-spacing: 0 !important;
+        line-height: 39px !important;
+        font-weight: 300;
+    }
+}
+
+@media (min-width: 992px) {
+    .snow-header {
+        font-style: normal;
+        font-size: 36px !important;
+        letter-spacing: 20px !important;
+        line-height: 43px !important;
+        font-weight: 300;
+    }
+}
+
+
+
 /*******/
 
 .mobile-toggle {
