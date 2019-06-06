@@ -1,0 +1,27 @@
+<script type="text/javascript">
+	(
+		function ($) {
+			function readyFn() {
+					console.log('Snow element move');
+					$('.snow-project-image-caption').each(
+					function(i,obj){
+						$(this).prev().append($(this));
+					}
+				);
+				
+				$('.snow-project-image').on('mouseenter', function(){
+						$(this).addClass('active');
+					}
+				);
+				
+				$('.snow-project-image').on('mouseleave', function(){
+						$(this).removeClass('active');
+					}
+				);
+			}
+ 
+			$(document).ready(readyFn); 
+		}
+	)(jQuery);
+
+</script>
