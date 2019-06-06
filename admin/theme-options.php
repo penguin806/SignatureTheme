@@ -1387,7 +1387,7 @@
                             'title'    => esc_html__( 'Thin Font', 'signature' ),
                             'subtitle' => esc_html__( 'Specify the thin font.', 'signature' ),
 //                            'google'   => true,
-                            google => true,
+                            'google' => true,
                             'font-weight' => false,
                             'font-size' => false,
                             'line-height' => false,
