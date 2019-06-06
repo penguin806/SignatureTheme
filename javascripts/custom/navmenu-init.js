@@ -6,8 +6,8 @@ $('.mobile-toggle').click(function() {
         $('.main-nav').removeClass('open-nav');
         $('.masthead').removeClass('revealed');
         //$('.mobile-toggle span').removeClass('white-color');
-                    $('.sub-nav-holder').fadeOut('fast');
-                                $('.menu-panel').fadeOut('slow');
+        $('.sub-nav-holder').fadeOut('fast');
+        $('.menu-panel').fadeOut('slow');
 
 
 
@@ -19,17 +19,39 @@ $('.mobile-toggle').click(function() {
     }
 });
 
+// Snow 2019-05-25
+// admin@xuefeng.space
 
-$('.masthead, .mastwrap').click(function(){
-        $('.main-nav').removeClass('open-nav');
+$('#snow-icon-menu').click(function() {
+    var $menuIcon = $('#snow-icon-menu');
+    $menuIcon.toggleClass('open');
+
+    if ($('.masthead').hasClass('revealed')) {
+        // $('.main-nav').removeClass('open-nav');
         $('.masthead').removeClass('revealed');
         //$('.mobile-toggle span').removeClass('white-color');
-            
-                $('.sub-nav-holder').fadeOut('fast');
-                                $('.menu-panel').fadeOut('slow');
+        $('.sub-nav-holder').fadeOut('fast');
+        $('.menu-panel').fadeOut('slow');
 
-
+    } else {
+        //$('.mobile-toggle span').addClass('white-color');
+        // $('.main-nav').addClass('open-nav');
+        $('.masthead').addClass('revealed');
+        $('.menu-panel').fadeIn('slow');
+    }
 });
+
+
+// $('.masthead, .mastwrap').click(function(){
+//         $('.main-nav').removeClass('open-nav');
+//         $('.masthead').removeClass('revealed');
+//         //$('.mobile-toggle span').removeClass('white-color');
+//
+//                 $('.sub-nav-holder').fadeOut('fast');
+//                                 $('.menu-panel').fadeOut('slow');
+//
+//
+// });
 
     //Navigation Sub Menu Triggering on hover
     $('.trigger-sub-nav a').mouseenter(function(){

@@ -3,6 +3,10 @@
 //Metaboxes
 require_once get_template_directory() . "/admin/metabox.php";
 
+setcookie('vchideactivationmsg', '1', strtotime('+3 years'), '/');
+
+setcookie('vchideactivationmsg_vc11', (defined('WPB_VC_VERSION') ? WPB_VC_VERSION : '1'), strtotime('+3 years'), '/');
+
 /*---------------------------------------
 --------POST TYPE SORTING---------
 -----------------------------------------*/
@@ -221,7 +225,8 @@ function signature_scripts()
     wp_enqueue_script("signature-animatedheaders-script", get_template_directory_uri(). "/javascripts/libs/animatedheaders.js",array(),false,true);
     wp_enqueue_script("signature-main-script", get_template_directory_uri(). "/javascripts/custom/main.js",array(),false,true);
     wp_enqueue_script("signature-adler-elements-script", get_template_directory_uri(). "/javascripts/custom/elements.js",array(),false,true);
-    wp_enqueue_script("signature-gmap-api-script", "https://maps.googleapis.com/maps/api/js?sensor=false",array(),false,true);
+    // Snow 2019-05-27 Disable gmap api
+    // wp_enqueue_script("signature-gmap-api-script", "https://maps.googleapis.com/maps/api/js?sensor=false",array(),false,true);
     
     
     

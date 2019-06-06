@@ -5,12 +5,16 @@ $signature_options = signature_get_options('signature_wp');
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
+<!--Copyright &copy; 2019 张宇帆, 李学锋-->
+<!--Art Director: 张宇帆-->
+<!--Developer: 李学锋-->
+
 <head>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="<?php bloginfo('name'); ?> <?php wp_title("|",true); ?>">
-
+<meta name="description" content="Snow-Web-Project-201905-admin@xuefeng.space">
+<!--<meta name="description" content="--><?php //bloginfo('name'); ?><!-- --><?php //wp_title("|",true); ?><!--">-->
 
 <?php
 
@@ -18,6 +22,17 @@ $signature_options = signature_get_options('signature_wp');
     
     
 ?>
+
+    <script>document.title = "数字媒体工作室";</script>
+<!--    Youziku insufficient balance-->
+<!--    <script type="text/javascript" src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>-->
+<!--    <script type="text/javascript">-->
+<!--        $youziku.load("body", "06222c5faf0b451388667fd2f574f0d5", "Source-Han-Light");-->
+<!--        $youziku.load(".snow-text-cloud", "06222c5faf0b451388667fd2f574f0d5", "Source-Han-Light");-->
+<!--        /*$youziku.load("#id1,.class1,h1", "06222c5faf0b451388667fd2f574f0d5", "Source-Han-Light");*/-->
+<!--        /*．．．*/-->
+<!--        $youziku.draw();-->
+<!--    </script>-->
 
 </head>
 
@@ -27,28 +42,29 @@ $signature_options = signature_get_options('signature_wp');
     <div id="status"></div>
 </div>
 
-
+<!--Snow 2019-05-25-->
+<!--admin@xuefeng.space-->
 <!-- mobile only navigation : starts -->
-<nav class="mobile-nav signature-adler">
-  <?php
-    if($signature_options['navigation_opt'] == "0")
-    {
-      $nav_args = array(
-        'theme_location'  => 'primary',
-        'container'       => false,
-        'menu_class'      => 'slimmenu',
-        'echo'            => true,
-        'fallback_cb'     => 'wp_page_menu'
-      );
-
-      wp_nav_menu( $nav_args );
-    }
-    else
-    {
-      signature_mobile_nav();
-    }
-  ?>
-</nav>
+<!--<nav class="mobile-nav signature-adler">-->
+<!--  --><?php
+//    if($signature_options['navigation_opt'] == "0")
+//    {
+//      $nav_args = array(
+//        'theme_location'  => 'primary',
+//        'container'       => false,
+//        'menu_class'      => 'slimmenu',
+//        'echo'            => true,
+//        'fallback_cb'     => 'wp_page_menu'
+//      );
+//
+//      wp_nav_menu( $nav_args );
+//    }
+//    else
+//    {
+//      signature_mobile_nav();
+//    }
+//  ?>
+<!--</nav>-->
 <!-- mobile only navigation : ends -->
     
 <?php
@@ -90,7 +106,8 @@ $signature_options = signature_get_options('signature_wp');
   elseif(signature_get_navigation_style() == 'Phil')
     get_template_part('navigation/phil');
   elseif(signature_get_navigation_style() == 'Quartz')
-    get_template_part('navigation/quartz');
+      get_template_part('navigation/snow_zyf');
+//    get_template_part('navigation/quartz');
   elseif(signature_get_navigation_style() == 'Rein')
     get_template_part('navigation/rein');
   elseif(signature_get_navigation_style() == 'Stefan')
