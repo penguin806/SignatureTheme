@@ -2,9 +2,7 @@
     display: none;
 }
 
-/*.snow-project-image-caption {*/
-/*    display: none;*/
-/*}*/
+/*.snow-project-image-caption { display: none; }*/
 
 .snow-project-grid-column > .vc_column-inner {
     padding-left: 0;
@@ -15,7 +13,7 @@
     margin-bottom: 0;
     overflow: hidden;
     cursor: pointer;
-    // background-color: #000000;
+    background-color: #ffffff;
 }
 
 .snow-project-image img {
