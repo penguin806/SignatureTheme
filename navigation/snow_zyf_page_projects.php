@@ -3,64 +3,76 @@ $signature_options = signature_get_options('signature_wp');
 wp_enqueue_script('navmenu-init');
 ?>
 
-    <!--Snow 2019-05-25-->
+    <!--Snow 2019-06-11-->
     <!--admin@xuefeng.space-->
+    <style>
+        #menu_Area {
+            display: inline-block;
+            padding: 0 10px;
+            margin-left: 30px;
+        }
 
-    <!-- main navigation trigger -->
-<!--<div class="main-nav signature-quartz visible-lg">-->
-<!--  <div class="mobile-toggle color">-->
-<!--      <span></span>-->
-<!--      <span></span>-->
-<!--      <span></span>-->
-<!--  </div>-->
-<!--    <div id="snow-icon-menu" class="">-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--        <span></span>-->
-<!--    </div>-->
-<!--</div>-->
+        #menu_Area button {
+            background: transparent;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 0;
+        }
+
+        #menu_Area a {
+            display: block;
+            padding: 0 10px;
+        }
+    </style>
 
 
-<!--    <header class="masthead signature-leon leon-trans-header" style="background: --><?php //echo esc_attr($signature_options['leon-nav-bar-bg-color']);?><!--">-->
-    <header class="masthead signature-leon leon-trans-header" style="padding: 30px 25px; background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%) !important; display: block !important;">
+    <header class="masthead signature-leon leon-trans-header" style="padding: 30px 25px; background: white !important; display: block !important;">
         <div class="container-fluid" style="padding-left: 0">
             <div class="row">
 
-<!--                <article class="col-md-6">-->
-<!--                    <a href="--><?php //echo esc_url(home_url( '/' )); ?><!--"><img alt="--><?php //echo esc_attr(get_bloginfo('name')); ?><!--" title="--><?php //echo esc_attr(get_bloginfo('name')); ?><!--" class="nav-logo img-responsive" src="--><?php //echo esc_url($signature_options['leon-nav-bar-logo']['url']); ?><!--"/></a>-->
-<!--                </article>-->
                 <article class="col-xs-6">
-<!--                    <a href="--><?php //echo esc_url(home_url( '/' )); ?><!--"><img alt="--><?php //echo esc_attr(get_bloginfo('name')); ?><!--" title="--><?php //echo esc_attr(get_bloginfo('name')); ?><!--" class="nav-logo img-responsive" src="--><?php //echo esc_url(get_template_directory_uri()); ?><!--/_resources/snow_zyf_logo.svg"/></a>-->
-                    <a href="<?php echo esc_url(home_url( '/' )); ?>"><img alt="<?php echo esc_attr(get_bloginfo('name')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="nav-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/_resources/snow_zyf_logo.svg"/></a>
+                    <a href="<?php echo esc_url(home_url( '/' )); ?>"><img alt="<?php echo esc_attr(get_bloginfo('name')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="nav-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/_resources/snow_zyf_logo_black.svg"/></a>
                 </article>
 
-                <article class="col-xs-6 notification-icon-wrap">
-<!--                    <div class="dropdown">-->
-<!--                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
-<!--                            Dropdown button-->
-<!--                        </button>-->
-<!--                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">-->
-<!--                            <a class="dropdown-item" href="#">Action</a>-->
-<!--                            <a class="dropdown-item" href="#">Another action</a>-->
-<!--                            <a class="dropdown-item" href="#">Something else here</a>-->
-<!--                        </div>-->
-<!--                    </div>-->
+                <acticle class="col-xs-5 hidden-xs text-right">
+                    <div id="menu_Area" class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            所有领域 <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" id="projects-filter-button-WebApp" href="#">Web/App</a>
+                            <a class="dropdown-item" id="projects-filter-button-book" href="#">书籍</a>
+                            <a class="dropdown-item" id="projects-filter-button-video" href="#">视频</a>
+                            <a class="dropdown-item" id="projects-filter-button-plane" href="#">平面</a>
 
-                    <div class="menu-notification">
-<!--                        <a class="font3bold" href="#"><span class="ion-android-menu white"></span></a>-->
-                        <div id="snow-icon-menu" class="">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
                         </div>
                     </div>
 
+                    <div id="menu_Area" class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            所有时间 <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" id="projects-filter-button-year2019" href="#">2019</a>
+                            <a class="dropdown-item" id="projects-filter-button-year2018" href="#">2018</a>
+                            <a class="dropdown-item" id="projects-filter-button-year2017" href="#">2017</a>
+                            <a class="dropdown-item" id="projects-filter-button-year2016" href="#">2016</a>
+                            <a class="dropdown-item" id="projects-filter-button-year2015" href="#">2015</a>
+                        </div>
+                    </div>
+                </acticle>
+
+                <article class="col-sm-1 col-xs-6 notification-icon-wrap">
+                    <div class="menu-notification">
+                        <div id="snow-icon-menu" class="">
+                            <span style="background: #000; !important"></span>
+                            <span style="background: #000; !important"></span>
+                            <span style="background: #000; !important"></span>
+                            <span style="background: #000; !important"></span>
+                            <span style="background: #000; !important"></span>
+                            <span style="background: #000; !important"></span>
+                        </div>
+                    </div>
                 </article>
 
             </div>
