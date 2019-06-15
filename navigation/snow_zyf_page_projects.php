@@ -18,6 +18,7 @@ wp_enqueue_script('navmenu-init');
             line-height: 16px;
             padding: 0;
             padding-bottom: 4px;
+            outline: none;
         }
 
         .menu_Area a {
@@ -88,7 +89,7 @@ wp_enqueue_script('navmenu-init');
                     </div>
 
                     <div class="menu_Area snow-form" style="margin-right: -30px;">
-                        <input class="form-control" type="text" placeholder="搜索" aria-label="Search">
+                        <input class="form-control" id="snow-projects-search-bar" type="text" placeholder="搜索" aria-label="Search">
                     </div>
                 </acticle>
 

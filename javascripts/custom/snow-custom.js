@@ -23,7 +23,6 @@
         function projectsFilterArea(areaName) {
             $('.snow-project-image').fadeOut();
 
-            // $('.snow-project-image.snow-type_webapp').each(
             $('.snow-project-image.snow-type_'+areaName).each(
                 function (index, element) {
                     $(this).appendTo($firstRowDivArray[index%3]);
@@ -35,7 +34,6 @@
         function projectsFilterYear(yearNum) {
             $('.snow-project-image').fadeOut();
 
-            // $('.snow-project-image.snow-type_webapp').each(
             $('.snow-project-image.snow-year_'+yearNum).each(
                 function (index, element) {
                     $(this).appendTo($firstRowDivArray[index%3]);
@@ -98,6 +96,32 @@
                 projectsFilterYear('2015');
             }
         );
+
+        $('#snow-projects-search-bar').bind(
+            'input propertychange', function() {
+                $('.snow-project-image').fadeOut();
+                var searchBarString = $('#snow-projects-search-bar').val();
+                var matchCount = 0;
+
+                $('.snow-project-image').each(
+                    function (index, element) {
+                        var filterString = '.snow-project-image-caption-inner :contains(' +
+                            searchBarString +')';
+
+                        if( $(this).find(filterString).length > 0 )
+                        {
+                            $(this).appendTo($firstRowDivArray[matchCount%3]);
+                            $(this).fadeIn();
+                            matchCount++;
+                        }
+                        else {
+                            // Nothing to do
+                        }
+                    }
+                );
+            }
+        );
+
 
     });
     // $(function ($)  : ends
