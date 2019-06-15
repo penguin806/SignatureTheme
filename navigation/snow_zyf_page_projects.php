@@ -6,23 +6,49 @@ wp_enqueue_script('navmenu-init');
     <!--Snow 2019-06-11-->
     <!--admin@xuefeng.space-->
     <style>
-        #menu_Area {
+        .menu_Area {
             display: inline-block;
-            padding: 0 10px;
+            padding: 0 5px;
             margin-left: 30px;
         }
 
-        #menu_Area button {
+        .menu_Area button {
             background: transparent;
             font-size: 16px;
             line-height: 16px;
             padding: 0;
+            padding-bottom: 4px;
         }
 
-        #menu_Area a {
+        .menu_Area a {
             display: block;
             padding: 0 10px;
         }
+
+        .menu_Area.snow-form input {
+            border: none;
+            border-bottom: 1px solid #ced4da;
+            border-radius: 0;
+            background-color: transparent;
+            box-shadow: none;
+            font-size: 14px;
+            line-height: 14px;
+            padding: 5px 10px;
+            height: auto;
+            font-family: inherit;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+        }
+
+        .menu_Area.snow-form input:focus{
+            border-color: #66afe9;
+            outline: 0;
+            box-shadow: 0 1px 0 0 #4285f4;
+            border-bottom: 1px solid #4285f4;
+            /*-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);*/
+            /*box-shadow: none;*/
+            /*box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);*/
+        }
+
     </style>
 
 
@@ -30,16 +56,16 @@ wp_enqueue_script('navmenu-init');
         <div class="container-fluid" style="padding-left: 0">
             <div class="row">
 
-                <article class="col-xs-6">
+                <article class="col-xs-6 col-md-3">
                     <a href="<?php echo esc_url(home_url( '/' )); ?>"><img alt="<?php echo esc_attr(get_bloginfo('name')); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>" class="nav-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/_resources/snow_zyf_logo_black.svg"/></a>
                 </article>
 
-                <acticle class="col-xs-5 hidden-xs text-right">
-                    <div id="menu_Area" class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <acticle class="col-md-8 hidden-xs hidden-sm text-right">
+                    <div class="dropdown menu_Area">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton_1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             所有领域 <i class="fa fa-caret-down"></i>
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton_1">
                             <a class="dropdown-item" id="projects-filter-button-WebApp" href="#">Web/App</a>
                             <a class="dropdown-item" id="projects-filter-button-book" href="#">书籍</a>
                             <a class="dropdown-item" id="projects-filter-button-video" href="#">视频</a>
@@ -48,11 +74,11 @@ wp_enqueue_script('navmenu-init');
                         </div>
                     </div>
 
-                    <div id="menu_Area" class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="menu_Area dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton_2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             所有时间 <i class="fa fa-caret-down"></i>
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton_2">
                             <a class="dropdown-item" id="projects-filter-button-year2019" href="#">2019</a>
                             <a class="dropdown-item" id="projects-filter-button-year2018" href="#">2018</a>
                             <a class="dropdown-item" id="projects-filter-button-year2017" href="#">2017</a>
@@ -60,9 +86,13 @@ wp_enqueue_script('navmenu-init');
                             <a class="dropdown-item" id="projects-filter-button-year2015" href="#">2015</a>
                         </div>
                     </div>
+
+                    <div class="menu_Area snow-form" style="margin-right: -30px;">
+                        <input class="form-control" type="text" placeholder="搜索" aria-label="Search">
+                    </div>
                 </acticle>
 
-                <article class="col-sm-1 col-xs-6 notification-icon-wrap">
+                <article class="col-xs-6 col-md-1 notification-icon-wrap">
                     <div class="menu-notification">
                         <div id="snow-icon-menu" class="">
                             <span style="background: #000; !important"></span>
